@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean 14:6 — Rebirth in Christ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #222 0%, #000 100%);
+}
+
+.cross-bg {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+    box-shadow: 0 0 40px rgba(255,255,255,0.6);
+    animation: glow 4s ease-in-out infinite alternate;
+}
+
+.cross-bg::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: -100px;
+    width: 500px;
+    height: 150px;
+    background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 20px rgba(255,255,255,0.4); }
+    to { box-shadow: 0 0 60px rgba(255,255,255,0.9); }
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 40px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    line-height: 1.6;
+}
+
+.highlight {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 30px auto;
+    opacity: 0.8;
+}
+
+.english {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.reference {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.85;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 1.5rem; }
+    .english { font-size: 1.3rem; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="cross-bg"></div>
+
+<div class="container">
+    <h1>
+        « Je suis le <span class="highlight">CHEMIN</span>, la 
+        <span class="highlight">VÉRITÉ</span> et la 
+        <span class="highlight">VIE</span> »  
+        <div class="reference">— Jean 14:6</div>
+    </h1>
+
+    <div class="divider"></div>
+
+    <div class="english">
+        “I am the <span class="highlight">WAY</span>, the 
+        <span class="highlight">TRUTH</span> and the 
+        <span class="highlight">LIFE</span>”
+        <div class="reference">— John 14:6</div>
+    </div>
+</div>
+
+<audio autoplay loop>
+  <source src="worship.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
